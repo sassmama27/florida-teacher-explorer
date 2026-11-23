@@ -1,5 +1,7 @@
 # Florida Teacher Discipline Explorer — Version 4.1 public prototype
 
+[Open the Florida Teacher Discipline Explorer](https://sassmama27.github.io/florida-teacher-explorer/)
+
 Static GitHub Pages website based on the original Version 4 prototype. Upload the contents of this directory to the repository root and enable Pages from the main branch / root.
 
 ## Data
