@@ -1,17 +1,16 @@
-# Florida Teacher Discipline Explorer — Version 4.1 public prototype
+# Florida Teacher Discipline Explorer — Version 4.1 Public Prototype
 
 [Open the Florida Teacher Discipline Explorer](https://sassmama27.github.io/florida-teacher-explorer/)
 
-Static GitHub Pages website based on the original Version 4 prototype. Upload the contents of this directory to the repository root and enable Pages from the main branch / root.
+The Florida Teacher Discipline Explorer is an independent, searchable database of Florida educator discipline records. Use it to search by educator name or case number, filter by county, order year, action, violation type, or certificate outcome, and open the linked final order when available. Can contain errors, check source PDF in order to double check. 
 
 ## Data
-- `discipline_data.json`: original Version 4 dataset, 16,043 rows (unchanged).
-- `review_data_v4_1.json`: preliminary incident review data linked by case number, with evidence candidates and processing statuses.
-- Three CSV files: original Version 4.1 review exports, preserved for transparency.
 
-**Important:** All 100 supplied incident reviews are marked `Pending`, with no populated verified school or verified incident type. Candidate labels and extracted passages are **not verified findings**. The site displays them separately in case details, without overwriting the original statewide records.
+- [`discipline_data.json`](discipline_data.json) contains 16,043 statewide records and includes the latest case updates from review Batches 12, 13, and 18. These batches updated 178 existing records.
+- [`review_data_v4_1.json`](review_data_v4_1.json) contains preliminary incident review entries, candidate evidence, and processing statuses linked by case number.
+- The original Version 4.1 review exports are available in [`incident_review_v4_1.csv`](incident_review_v4_1.csv), [`evidence_candidates_v4_1.csv`](evidence_candidates_v4_1.csv), and [`processing_status_v4_1.csv`](processing_status_v4_1.csv).
 
-This is an independent prototype, not an official Florida Department of Education website. Refer to source final orders for authoritative records. GitHub Pages is static hosting; no Python server is required.
+**Important** — Review status can differ between the disposition and the violation. Open **View details** to see the available review statuses and any provisional labels. Entries marked **Pending OCR**, **Needs review**, or **Source unavailable** indicate that the relevant part of the review remains unresolved. Treat candidate labels and extracted passages as preliminary and consult the official final order for the Education Practices Commission’s disposition and the record it adopted.
 
 ## PDF source links
 Each record includes a View PDF link to its original source final order URL. Links open externally; their availability depends on the source website.
